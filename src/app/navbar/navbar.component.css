@@ -1,0 +1,35 @@
+.spacer {
+  flex: 1 1 auto;
+}
+
+.mat-toolbar {
+  background: #00000000;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.fixed-header {
+  position: fixed;
+  z-index:999;
+  height: 50px;
+}
+
+.example-button-row button,
+.example-button-row a {
+  margin-right: 8px;
+}
+
+
+.test {
+  color: #fff;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.logo {
+  font-size: 28px;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #fff;
+  max-height: 40px;
+}

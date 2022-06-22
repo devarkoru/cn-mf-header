@@ -1,0 +1,28 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+<header>
+  <mat-toolbar color="black" class="fixed-header">
+    <h1 class="logo"><a>ARKRATER</a></h1>
+    <span class="spacer"></span>
+    <div class="example-button-row">
+      <button mat-button routerLink="/">Inicio</button>
+      <button mat-button routerLink="/portal/cv" routerLinkActive="active">Sobre Mi</button>
+      <button mat-button color="accent" class="test" routerLink="/portal/perfil-gamer" routerLinkActive="active">Lado
+        Gamer</button>
+      <button mat-button [matMenuTriggerFor]="menu">Portafolio</button>
+      <mat-menu #menu="matMenu">
+        <button routerLink="/portal/angular" routerLinkActive="active" mat-menu-item>Angular</button>
+        <button routerLink="/portal/react" routerLinkActive="active" mat-menu-item>React</button>
+        <button routerLink="/portal/svelte" routerLinkActive="active" mat-menu-item>Svelte</button>
+        <button routerLink="/portal/vue" routerLinkActive="active" mat-menu-item>Vue</button>
+      </mat-menu>
+    </div>
+    <a mat-raised-button color="accent">Sign Up</a>
+  </mat-toolbar>
+</header>
+
+<main>
+  <router-outlet></router-outlet>
+</main>
